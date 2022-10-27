@@ -32,7 +32,7 @@ window.onload = function () {
   function changePosition(event) {
     let circle = event.target;
     audio.play();
-    audio.volume = 0.3;
+    audio.volume = 0.4;
 
     circle.style.animationName = "none";
 
@@ -48,7 +48,7 @@ window.onload = function () {
     circle.style.setProperty("--yA", finalY);
 
     circle.style.setProperty("--xB", getRandomNumber(100, 1440) + "px");
-    circle.style.setProperty("--yB", getRandomNumber(100, 800) + "px");
+    circle.style.setProperty("--yB", getRandomNumber(100, 500) + "px");
   }
 
   function getRandomNumber(low, high) {
