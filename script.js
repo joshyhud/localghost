@@ -6,6 +6,9 @@ window.onload = function () {
   var ghosteyeL = document.querySelector("#eyeL");
   var ghosteyeR = document.querySelector("#eyeR");
 
+  var audio = new Audio("Dancing_Skeletons.mp3");
+  audio.play();
+
   ghost.onclick = function () {
     container.classList.toggle("dark");
     ghostbody.classList.toggle("night");
