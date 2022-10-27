@@ -20,13 +20,24 @@ body {
 .container .heading.dark-heading {
   color: #ff4c74;
 }
+.container .boo{
+  display: none;
+  background-image: url('./assets/boo.svg');
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
 #ghost {
+  z-index: 999999;
   --xA: 10px;
   --yA: 10px;
   --xB: 30px;
   --yB: 30px;
   animation-name: moveGhost;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
 }
@@ -51,6 +62,10 @@ body {
   background-color: #1d1f20;
   animation: lightning 0.1s linear 0.5s 3;
 }
+.boop{
+  display: block !important;
+}
+
 @keyframes lightning {
   0% {
     background-color: #fff;

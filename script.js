@@ -5,9 +5,9 @@ window.onload = function () {
   var ghostbody = document.querySelector("#body");
   var ghosteyeL = document.querySelector("#eyeL");
   var ghosteyeR = document.querySelector("#eyeR");
+  var boo = document.querySelector(".boo");
 
   var audio = new Audio("Dancing_Skeletons.mp3");
-  audio.play();
 
   ghost.onclick = function () {
     container.classList.toggle("dark");
@@ -15,6 +15,7 @@ window.onload = function () {
     ghosteyeL.classList.toggle("night");
     ghosteyeR.classList.toggle("night");
     heading.classList.toggle("dark-heading");
+    boo.classList.toggle("boop");
 
     setTimeout(function () {
       container.classList.toggle("dark");
@@ -22,6 +23,7 @@ window.onload = function () {
       ghosteyeL.classList.toggle("night");
       ghosteyeR.classList.toggle("night");
       heading.classList.toggle("dark-heading");
+      boo.classList.toggle("boop");
     }, 2000);
   };
 
@@ -29,6 +31,7 @@ window.onload = function () {
 
   function changePosition(event) {
     let circle = event.target;
+    audio.play();
 
     circle.style.animationName = "none";
 
