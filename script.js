@@ -34,6 +34,8 @@ window.onload = function () {
     audio.play();
     audio.volume = 0.4;
 
+    var x = window.matchMedia("(max-width: 700px)");
+
     circle.style.animationName = "none";
 
     requestAnimationFrame(() => {
@@ -46,9 +48,13 @@ window.onload = function () {
 
     circle.style.setProperty("--xA", finalX);
     circle.style.setProperty("--yA", finalY);
-
-    circle.style.setProperty("--xB", getRandomNumber(100, 1440) + "px");
-    circle.style.setProperty("--yB", getRandomNumber(100, 500) + "px");
+    if (x.matches) {
+      circle.style.setProperty("--xB", getRandomNumber(100, 300) + "px");
+      circle.style.setProperty("--yB", getRandomNumber(100, 500) + "px");
+    } else {
+      circle.style.setProperty("--xB", getRandomNumber(100, 1440) + "px");
+      circle.style.setProperty("--yB", getRandomNumber(100, 500) + "px");
+    }
   }
 
   function getRandomNumber(low, high) {
