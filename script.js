@@ -49,8 +49,6 @@ window.onload = function () {
 
     circle.style.setProperty("--xB", getRandomNumber(100, 1440) + "px");
     circle.style.setProperty("--yB", getRandomNumber(100, 800) + "px");
-
-    console.log(circle);
   }
 
   function getRandomNumber(low, high) {
