@@ -6,6 +6,7 @@ body {
   width: 100vw;
   height: 100vh;
   background-color: #ff4c74;
+  overflow: hidden;
 }
 .container .heading {
   padding: 10px;
