@@ -7,60 +7,50 @@ body {
   height: 100vh;
   background-color: #ff4c74;
 }
-
-.heading {
+.container .heading {
   padding: 10px;
   text-align: center;
   font-family: "SeroOT-Black", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
   line-height: 1;
 }
-
-.heading h2 {
-    font-size: 34px;
+.container .heading h2 {
+  font-size: 34px;
 }
-
-.heading &.dark-heading {
+.container .heading.dark-heading {
   color: #ff4c74;
 }
-
-#ghost { 
-      --xA: 10px;
-      --yA: 10px;
-      --xB: 30px;
-      --yB: 30px;
-  
-      animation-name: moveGhost;
-      animation-duration: 2s;
-      animation-iteration-count: 1;
-      animation-timing-function: cubic-bezier(.17, .67, .4, 1.31);
+#ghost {
+  --xA: 10px;
+  --yA: 10px;
+  --xB: 30px;
+  --yB: 30px;
+  animation-name: moveGhost;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
 }
-
-    @keyframes moveGhost {
-      0% {
-        transform: translate3d(var(--xA), var(--yA), 0);
-      }
-      100% {
-        transform: translate3d(var(--xB), var(--yB), 0);
-      }
-    }
-
+@keyframes moveGhost {
+  0% {
+    transform: translate3d(var(--xA), var(--yA), 0);
+  }
+  100% {
+    transform: translate3d(var(--xB), var(--yB), 0);
+  }
+}
 #body, #eyeL, #eyeR {
   opacity: 0.1;
 }
-
 /* ghost body night colour */
 .night {
   fill: #ffffff;
   opacity: 1 !important;
 }
-
 /* background night colour */
 .dark {
   background-color: #1d1f20;
   animation: lightning 0.1s linear 0.5s 3;
 }
-
 @keyframes lightning {
   0% {
     background-color: #fff;
