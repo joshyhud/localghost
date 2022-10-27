@@ -23,6 +23,7 @@ body {
 .container .boo{
   display: none;
   background-image: url('./assets/boo.svg');
+  background-repeat: no-repeat;
   width: 50%;
   height: 100%;
   position: absolute;
@@ -30,7 +31,7 @@ body {
   transform: translateX(-50%);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 480px) {
   .container .boo{
     display: none;
     background-image: url('./assets/boo.svg');
@@ -38,6 +39,7 @@ body {
     height: 100%;
     position: absolute;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 }
 

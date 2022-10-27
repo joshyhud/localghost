@@ -34,7 +34,7 @@ window.onload = function () {
     audio.play();
     audio.volume = 0.4;
 
-    var x = window.matchMedia("(max-width: 700px)");
+    var x = window.matchMedia("(max-width: 480px)");
 
     circle.style.animationName = "none";
 
