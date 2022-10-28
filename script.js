@@ -1,5 +1,6 @@
 window.onload = function () {
   var ghost = document.querySelector("#ghost");
+  var audioElement = document.querySelector("audio");
   var backup1 = document.querySelector("#ghost-backup1");
   var backup2 = document.querySelector("#ghost-backup2");
   var backup3 = document.querySelector("#ghost-backup3");
