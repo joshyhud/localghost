@@ -1,3 +1,8 @@
+@font-face {
+  font-family: creepy;
+  src: url(./assets/Creepster-Regular.ttf);
+}
+
 body {
   margin: 0;
   overflow: hidden;
@@ -11,7 +16,7 @@ body {
 .container .heading {
   padding: 10px;
   text-align: center;
-  font-family: "SeroOT-Black", "Helvetica", "Arial", sans-serif;
+  font-family: creepy;
   text-transform: uppercase;
   line-height: 1;
 }
