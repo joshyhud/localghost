@@ -73,6 +73,12 @@ body {
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+  #ghost-backup1, #ghost-backup2, #ghost-backup3, #ghost-backup4, #ghost-backup5, #ghost-backup6, #ghost-backup7, #ghost-backup8, #ghost-backup9, #ghost-backup10 {
+    display: none;
+  }
+}
+
 @keyframes moveGhost {
   0% {
     transform: translate3d(var(--xA), var(--yA), 0);
