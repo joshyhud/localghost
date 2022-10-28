@@ -77,7 +77,7 @@ body {
   --xB: 20px;
   --yB: 20px;
   animation-name: moveGhost;
-  animation-duration: 3.5s;
+  animation-duration: 2s;
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
 }
