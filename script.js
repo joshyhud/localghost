@@ -1,5 +1,6 @@
 window.onload = function () {
   var ghost = document.querySelector("#ghost");
+  var video = document.querySelector("video");
   var backup1 = document.querySelector("#ghost-backup1");
   var backup2 = document.querySelector("#ghost-backup2");
   var backup3 = document.querySelector("#ghost-backup3");
@@ -16,6 +17,8 @@ window.onload = function () {
   var ghosteyeL = document.querySelector("#eyeL");
   var ghosteyeR = document.querySelector("#eyeR");
   var boo = document.querySelector(".boo");
+
+  video.play();
 
   ghost.onclick = function () {
     container.classList.toggle("dark");
