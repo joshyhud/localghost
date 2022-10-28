@@ -1,6 +1,5 @@
 window.onload = function () {
   var ghost = document.querySelector("#ghost");
-  var video = document.querySelector("video");
   var backup1 = document.querySelector("#ghost-backup1");
   var backup2 = document.querySelector("#ghost-backup2");
   var backup3 = document.querySelector("#ghost-backup3");
@@ -18,19 +17,10 @@ window.onload = function () {
   var ghosteyeR = document.querySelector("#eyeR");
   var boo = document.querySelector(".boo");
 
-  function toggleMute() {
-    var video = document.getElementById("videoId");
+  var audio = new Audio("./assets/dancing_skeletons.mp3");
 
-    if (video.muted) {
-      video.muted = false;
-    } else {
-      debugger;
-      video.muted = true;
-      video.play();
-    }
-  }
-
-  toggleMute();
+  audio.play();
+  audio.volume = 0.4;
 
   ghost.onclick = function () {
     container.classList.toggle("dark");
