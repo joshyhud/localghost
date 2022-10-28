@@ -17,13 +17,6 @@ window.onload = function () {
   var ghosteyeR = document.querySelector("#eyeR");
   var boo = document.querySelector(".boo");
 
-  var audio = new Audio("./assets/dancing_skeletons.mp3");
-
-  document.body.addEventListener("mouseenter", function () {
-    audio.play();
-    audio.volume = 0.4;
-  });
-
   ghost.onclick = function () {
     container.classList.toggle("dark");
     ghostbody.classList.toggle("night");
