@@ -19,7 +19,7 @@ window.onload = function () {
 
   var audio = new Audio("./assets/dancing_skeletons.mp3");
 
-  document.body.addEventListener("mousemove", function () {
+  document.body.addEventListener("mouseenter", function () {
     audio.play();
     audio.volume = 0.4;
   });
