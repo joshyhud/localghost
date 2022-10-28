@@ -18,7 +18,19 @@ window.onload = function () {
   var ghosteyeR = document.querySelector("#eyeR");
   var boo = document.querySelector(".boo");
 
-  video.play();
+  function toggleMute() {
+    var video = document.getElementById("videoId");
+
+    if (video.muted) {
+      video.muted = false;
+    } else {
+      debugger;
+      video.muted = true;
+      video.play();
+    }
+  }
+
+  toggleMute();
 
   ghost.onclick = function () {
     container.classList.toggle("dark");
