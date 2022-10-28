@@ -19,6 +19,9 @@ window.onload = function () {
 
   var audio = new Audio("./assets/dancing_skeletons.mp3");
 
+  audio.play();
+  audio.volume = 0.4;
+
   ghost.onclick = function () {
     container.classList.toggle("dark");
     ghostbody.classList.toggle("night");
@@ -56,12 +59,6 @@ window.onload = function () {
       backup10.classList.toggle("night");
     }, 2000);
   };
-
-  myAudioElement.addEventListener("canplaythrough", (event) => {
-    /* the audio is now playable; play it if permissions allow */
-    audio.play();
-    audio.volume = 0.4;
-  });
 
   container.addEventListener("animationend", changePosition, true);
 
