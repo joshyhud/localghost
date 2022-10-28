@@ -19,9 +19,6 @@ window.onload = function () {
 
   var audio = new Audio("./assets/dancing_skeletons.mp3");
 
-  audio.play();
-  audio.volume = 0.4;
-
   ghost.onclick = function () {
     container.classList.toggle("dark");
     ghostbody.classList.toggle("night");
@@ -64,6 +61,9 @@ window.onload = function () {
 
   function changePosition(event) {
     let circle = event.target;
+
+    audio.play();
+    audio.volume = 0.4;
 
     var x = window.matchMedia("(max-width: 480px)");
 

@@ -19,6 +19,7 @@ body {
   font-family: creepy;
   text-transform: uppercase;
   line-height: 1;
+  pointer-events: none;
 }
 .container .heading h2 {
   font-size: 54px;
