@@ -58,12 +58,29 @@ body {
   animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
 }
 
+#ghost-backup1, #ghost-backup2, #ghost-backup3, #ghost-backup4, #ghost-backup5, #ghost-backup6, #ghost-backup7, #ghost-backup8, #ghost-backup9, #ghost-backup10 {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+  z-index: 999999;
+  --xA: 10px;
+  --yA: 10px;
+  --xB: 20px;
+  --yB: 20px;
+  animation-name: moveGhost;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.4, 1.31);
+}
+
 @keyframes moveGhost {
   0% {
     transform: translate3d(var(--xA), var(--yA), 0);
+
   }
   100% {
     transform: translate3d(var(--xB), var(--yB), 0);
+
   }
 }
 #body, #eyeL, #eyeR {

@@ -1,5 +1,15 @@
 window.onload = function () {
   var ghost = document.querySelector("#ghost");
+  var backup1 = document.querySelector("#ghost-backup1");
+  var backup2 = document.querySelector("#ghost-backup2");
+  var backup3 = document.querySelector("#ghost-backup3");
+  var backup4 = document.querySelector("#ghost-backup4");
+  var backup5 = document.querySelector("#ghost-backup5");
+  var backup6 = document.querySelector("#ghost-backup6");
+  var backup7 = document.querySelector("#ghost-backup7");
+  var backup8 = document.querySelector("#ghost-backup8");
+  var backup9 = document.querySelector("#ghost-backup9");
+  var backup10 = document.querySelector("#ghost-backup10");
   var container = document.querySelector(".container");
   var heading = document.querySelector(".heading");
   var ghostbody = document.querySelector("#body");
@@ -16,6 +26,16 @@ window.onload = function () {
     ghosteyeR.classList.toggle("night");
     heading.classList.toggle("dark-heading");
     boo.classList.toggle("boop");
+    backup1.classList.toggle("night");
+    backup2.classList.toggle("night");
+    backup3.classList.toggle("night");
+    backup4.classList.toggle("night");
+    backup5.classList.toggle("night");
+    backup6.classList.toggle("night");
+    backup7.classList.toggle("night");
+    backup8.classList.toggle("night");
+    backup9.classList.toggle("night");
+    backup10.classList.toggle("night");
 
     setTimeout(function () {
       container.classList.toggle("dark");
@@ -24,6 +44,16 @@ window.onload = function () {
       ghosteyeR.classList.toggle("night");
       heading.classList.toggle("dark-heading");
       boo.classList.toggle("boop");
+      backup1.classList.toggle("night");
+      backup2.classList.toggle("night");
+      backup3.classList.toggle("night");
+      backup4.classList.toggle("night");
+      backup5.classList.toggle("night");
+      backup6.classList.toggle("night");
+      backup7.classList.toggle("night");
+      backup8.classList.toggle("night");
+      backup9.classList.toggle("night");
+      backup10.classList.toggle("night");
     }, 2000);
   };
 
