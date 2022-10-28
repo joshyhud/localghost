@@ -57,12 +57,16 @@ window.onload = function () {
     }, 2000);
   };
 
+  myAudioElement.addEventListener("canplaythrough", (event) => {
+    /* the audio is now playable; play it if permissions allow */
+    audio.play();
+    audio.volume = 0.4;
+  });
+
   container.addEventListener("animationend", changePosition, true);
 
   function changePosition(event) {
     let circle = event.target;
-    audio.play();
-    audio.volume = 0.4;
 
     var x = window.matchMedia("(max-width: 480px)");
 
